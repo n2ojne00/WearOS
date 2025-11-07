@@ -53,13 +53,13 @@ val AppTypography = CustomTypography(
     numberNormal = TextStyle(
         fontFamily = NotoSans,
         fontWeight = FontWeight.Medium,
-        fontSize = 32.sp,
+        fontSize = 25.sp,
         lineHeight = 36.sp
     ),
     numberLarge = TextStyle(
         fontFamily = NotoSans,
         fontWeight = FontWeight.Bold,
-        fontSize = 40.sp,
+        fontSize = 30.sp,
         lineHeight = 56.sp
     )
 )

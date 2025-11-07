@@ -16,13 +16,14 @@ import com.example.mykotlinwearos.R
 import com.example.mykotlinwearos.presentation.theme.AppIcons
 import com.example.mykotlinwearos.presentation.theme.AppTypography
 import com.example.mykotlinwearos.presentation.theme.CustomThemeHelper
+import com.example.mykotlinwearos.presentation.theme.responsive.rememberSizeKit
 import com.example.mykotlinwearos.presentation.theme.responsive.rememberWearScreenConfig
 
 @Composable
 fun TodayScreen(navController: NavController) {
     val colors = CustomThemeHelper.colors
     val screen = rememberWearScreenConfig()
-    val iconSize = 35
+    val sizeKit = rememberSizeKit()
 
     Box(
         modifier = Modifier
@@ -41,6 +42,7 @@ fun TodayScreen(navController: NavController) {
                 style = AppTypography.header,
                 color = colors.textPrimary
             )
+            Spacer(modifier = Modifier.padding(sizeKit.spacingSmall))
 
             Row(horizontalArrangement = Arrangement.spacedBy(6.dp)
             ) {
@@ -49,7 +51,7 @@ fun TodayScreen(navController: NavController) {
                     contentDescription = stringResource(R.string.heart_rate_now),
                     tint = colors.iconError,
                     modifier = Modifier
-                        .size(iconSize.dp)
+                        .size(sizeKit.iconMedium)
                 )
 
                 Text(
@@ -58,6 +60,7 @@ fun TodayScreen(navController: NavController) {
                     color = colors.textPrimary,
                 )
             }
+            Spacer(modifier = Modifier.padding(sizeKit.spacingSmall))
 
             Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
                 Icon(
@@ -65,7 +68,7 @@ fun TodayScreen(navController: NavController) {
                     contentDescription = stringResource(R.string.sleep),
                     tint = colors.textHighlight,
                     modifier = Modifier
-                        .size(iconSize.dp)
+                        .size(sizeKit.iconLarge)
                 )
 
                 Text(
@@ -76,13 +79,16 @@ fun TodayScreen(navController: NavController) {
                 )
             }
 
+            Spacer(modifier = Modifier.padding(sizeKit.spacingSmall))
+
+
             Row(horizontalArrangement = Arrangement.spacedBy(6.dp)) {
                 Icon(
                     imageVector = AppIcons.Person,
                     contentDescription = stringResource(R.string.steps),
                     tint = colors.textSuccess,
                     modifier = Modifier
-                        .size(iconSize.dp)
+                        .size(sizeKit.iconSmall)
 
                 )
 
