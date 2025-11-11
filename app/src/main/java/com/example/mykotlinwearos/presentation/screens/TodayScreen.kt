@@ -13,6 +13,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.mykotlinwearos.R
+import com.example.mykotlinwearos.presentation.components.ViewStatic
 import com.example.mykotlinwearos.presentation.components.setDate
 import com.example.mykotlinwearos.presentation.theme.AppIcons
 import com.example.mykotlinwearos.presentation.theme.AppTypography
@@ -26,15 +27,7 @@ fun TodayScreen(navController: NavController) {
     val screen = rememberWearScreenConfig()
     val sizeKit = rememberSizeKit()
 
-    Box(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(colors.background)
-            .padding(
-                horizontal = screen.horizontalPadding,
-                vertical = screen.verticalPadding
-            )
-            .border(1.dp, Color.Red), //Test border for padding visibility
+    ViewStatic(
         contentAlignment = Alignment.Center
     ) {
         //HEADER
