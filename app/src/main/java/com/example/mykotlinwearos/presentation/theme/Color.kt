@@ -11,6 +11,7 @@ import androidx.compose.ui.graphics.Color
 
 data class CustomTheme(
     val background: Color,
+    val overlayBg: Color,
 
     val textPrimary: Color, //Grey
     val textSecondary: Color, //Grey-green darker
@@ -37,6 +38,8 @@ data class CustomTheme(
 // Dark theme colors
 val darkThemeColors = CustomTheme(
     background = Color(0xFF000000),
+    overlayBg = Color(0xDF000000),
+
 
     textPrimary = Color(0xFFCDE0D0),
     textSecondary = Color(0xFFB3C6B8),
@@ -62,6 +65,7 @@ val darkThemeColors = CustomTheme(
 // Light theme colors
 val lightThemeColors = CustomTheme(
     background = Color(0xFFFCF8F2),
+    overlayBg = Color(0xDFFCF8F2),
 
     textPrimary = Color(0xFF232724),
     textSecondary = Color(0xFF34493B),

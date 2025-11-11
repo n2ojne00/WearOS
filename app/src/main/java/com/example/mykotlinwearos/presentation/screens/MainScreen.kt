@@ -17,10 +17,6 @@ import androidx.navigation.NavController
 import androidx.wear.compose.foundation.lazy.ScalingLazyColumn
 import androidx.wear.compose.foundation.lazy.items
 import androidx.wear.compose.foundation.lazy.rememberScalingLazyListState
-import androidx.wear.compose.material.Chip
-import androidx.wear.compose.material.ChipDefaults
-import androidx.wear.compose.material.Icon
-import androidx.compose.material.icons.filled.*
 import androidx.compose.ui.res.stringResource
 import androidx.wear.compose.material.Text
 import com.example.mykotlinwearos.R
@@ -36,7 +32,7 @@ fun MainScreen(navController: NavController) {
 
     val buttons = listOf(
         Triple("Theme test", "themeTest", AppIcons.Reset),
-        Triple("today", "today", AppIcons.Info),
+        Triple("today", "today", AppIcons.Active),
         Triple("Screen size", "configTest", AppIcons.Account)
     )
 

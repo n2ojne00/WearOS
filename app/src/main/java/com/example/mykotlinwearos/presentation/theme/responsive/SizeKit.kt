@@ -20,15 +20,17 @@ data class SizeKit(
     val iconMedium: Dp,
     val iconLarge: Dp,
 
-    // Fonts
-    val fontSmall: TextUnit,
-    val fontBody: TextUnit,
-    val fontLarge: TextUnit,
-
     // Buttons
     val buttonSmall: Dp,
     val buttonMedium: Dp,
-    val buttonLarge: Dp
+    val buttonLarge: Dp,
+
+    //Screen space
+    val halfScreen: Dp,
+    val quarterScreen: Dp,
+    val threeQuarterScreen: Dp,
+    val halfWidth: Dp,
+    val fullWidth: Dp
 )
 
 //USE REMEMBER SIZE KIT -> val sizeKit = rememberSizeKit()
@@ -55,14 +57,17 @@ fun rememberSizeKit(): SizeKit {
         iconMedium = (32 * scale).dp,
         iconLarge = (48 * scale).dp,
 
-        //FONT SIZE -> is it needed?
-        fontSmall = (10 * scale).sp,
-        fontBody = (14 * scale).sp,
-        fontLarge = (20 * scale).sp,
-
         //Button sizes
         buttonSmall = (48 * scale).dp,
         buttonMedium = (72 * scale).dp,
-        buttonLarge = (96 * scale).dp
+        buttonLarge = (96 * scale).dp,
+
+        //ScreenSpace
+        halfScreen = screen.screenHeight * 0.5f,
+        quarterScreen = screen.screenHeight * 0.25f,
+        threeQuarterScreen = screen.screenHeight * 0.75f,
+
+        halfWidth = screen.screenWidth * 0.5f,
+        fullWidth = screen.screenWidth * 1.0f
     )
 }

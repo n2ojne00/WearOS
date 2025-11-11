@@ -11,6 +11,7 @@ object AppIcons {
     val Settings: ImageVector = Icons.Default.Settings
     val Info: ImageVector = Icons.Default.Info
 
+    val Active: ImageVector = Icons.Default.CheckCircle
     val Play: ImageVector = Icons.Default.PlayArrow
     val Account: ImageVector = Icons.Default.AccountCircle
     val Reset: ImageVector = Icons.Default.Refresh

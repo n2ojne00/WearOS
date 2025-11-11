@@ -30,8 +30,8 @@ fun rememberWearScreenConfig(): WearScreenConfig {
         val isRound = kotlin.math.abs(screenWidth.value - screenHeight.value) < 10
         val isSmall = screenWidth < 200.dp
 
-        val horizontalPadding = (screenWidth * if (isRound) 0.03f else 0.04f)
-        val verticalPadding = (screenHeight * if (isRound) 0.02f else 0.03f)
+        val horizontalPadding = (screenWidth * if (isRound) 0.05f else 0.04f)
+        val verticalPadding = (screenHeight * if (isRound) 0.06f else 0.03f)
         val contentPadding = (screenWidth * 0.04f)
 
         WearScreenConfig(
