@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Minun Kotlin</string>
+    <string name="steps">Askeleet</string>
+    <string name="today">Tänään</string>
+    <string name="next">Seuraava</string>
+    <string name="exit">Poistu</string>
+    <string name="app_welcome">Tervetuloa</string>
+    <string name="hello_name">Hei, %1$s!</string>
+    <string name="theme_test">Teema testi</string>
+    <string name="practice">Harjoittelu</string>
+    <string name="heart">Syke</string>
+    <string name="sleep">Pitempi teksti mitä harjoitella</string>
+</resources>

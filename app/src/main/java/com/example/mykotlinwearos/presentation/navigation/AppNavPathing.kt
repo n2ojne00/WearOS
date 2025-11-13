@@ -9,7 +9,6 @@ import androidx.navigation.compose.rememberNavController
 
 import com.example.mykotlinwearos.presentation.screens.*
 
-
 @Composable
 fun AppNavHost(navController: NavHostController = rememberNavController()) {
     NavHost(

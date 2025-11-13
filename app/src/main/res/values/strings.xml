@@ -1,0 +1,66 @@
+<resources>
+    <!-- App Info -->
+    <string name="app_name">My Kotlin WearOS</string>
+    <string name="app_welcome">Welcome</string>
+    <string name="hello_name">Hello, %1$s!</string>
+    <string name="theme_test">Test Page</string>
+
+
+    <!-- Headers -->
+    <string name="heart">Heart Rate</string>
+    <string name="sleep">Sleep</string>
+    <string name="practice">Practice</string>
+    <string name="steps">Steps</string>
+    <string name="today">Today</string>
+
+    <!-- Messages -->
+    <string name="status_ready">Ready</string>
+    <string name="status_connected">Connected</string>
+    <string name="status_disconnected">No Connection</string>
+    <string name="status_loading">Loading...</string>
+    <string name="status_complete">Done</string>
+
+    <!-- Descriptions / Filler -->
+    <string name="long_text">Filler text for testing layout and scrolling.</string>
+    <string name="sample_description">Test WearOS features and layouts.</string>
+    <string name="error_message">Error. Try again.</string>
+
+    <!-- Practice Labels -->
+    <string name="practice_timer">Timer</string>
+    <string name="practice_heart">Heart</string>
+    <string name="practice_summary">Summary</string>
+    <string name="step_goal">Goal</string>
+
+    <!-- Minimal navigation -->
+    <string name="next">Next</string>
+    <string name="exit">Exit</string>
+
+    <!-- TESTING -->
+    <string name="heart_rate_now">Heart rate</string>
+    <string name="beats_per_minute" translatable="false">bpm</string>
+    <string name="heart_rate_resting">Resting rate</string>
+
+    <string name="example_number" translatable="false">46</string>
+    <string name="example_number_1" translatable="false">58</string>
+    <string name="example_number_2" translatable="false">72</string>
+    <string name="example_number_3" translatable="false">3290</string>
+    <string name="example_number_goal" translatable="false">6500</string>
+
+    <!-- TIME STAMPS -->
+    <string name="time_hours_minutes">%1$s h %2$s min</string>
+    <string name="months">%1$s months</string>
+    <string name="minutes">%1$s min</string>
+
+    <!-- SHORTIES -->
+    <string name="slash" translatable="false">/</string>
+    <string name="short_and" translatable="false">&amp;</string>
+
+</resources>
+
+    <!-- Apostrophe inside formatted text
+    <string name="motivation">Don&#39;t give up!</string>
+    -->
+    <!-- Percent sign inside formatted text
+<string name="progress_message">You have reached 65%% of your goal!</string>
+-->
+
