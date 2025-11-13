@@ -2,6 +2,7 @@ package com.example.mykotlinwearos.presentation.screens
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.Text
 import androidx.compose.material.icons.Icons
@@ -44,7 +45,7 @@ fun ThemeTestScreen(navController: NavController) {
             modifier = Modifier
                 //No use because scrollable view
                 //.align(Alignment.TopCenter)
-                .height(sizeKit.quarterScreen)
+                .height(sizeKit.halfScreen)
         ) {
 
             Text(
@@ -55,10 +56,11 @@ fun ThemeTestScreen(navController: NavController) {
             )
 
             Button(
-                colors = ButtonDefaults.buttonColors(backgroundColor = colors.iconSecondary),
+                colors = ButtonDefaults.buttonColors(backgroundColor = colors.iconPrimary),
                 onClick = { showOverlay = true },
+                shape = CircleShape
             ) {
-                Text("Show Overlay")
+                Text("Open overlay")
             }
 
         }
@@ -141,8 +143,11 @@ fun ThemeTestScreen(navController: NavController) {
     // Overlay
     if (showOverlay) {
         OverlayScreen(
-            onCancel = { showOverlay = false },
-            onConfirm = { println("OK"); showOverlay = false }
+            message = "Do you want to exit?",
+            primaryButtonText = "Yes",
+            secondaryButtonText = "No",
+            onPrimaryClick = { println("Primary OK");showOverlay = false },
+            onSecondaryClick = { println("Secondary OK"); showOverlay = false }
         )
     }
 }

@@ -8,6 +8,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import androidx.wear.compose.material.*
+import com.example.mykotlinwearos.presentation.components.ViewScrollable
+import com.example.mykotlinwearos.presentation.deviceCapability.CapabilityChecker
 import com.example.mykotlinwearos.presentation.theme.responsive.rememberWearScreenConfig
 
 
@@ -17,13 +19,8 @@ import com.example.mykotlinwearos.presentation.theme.responsive.rememberWearScre
 fun SimpleConfigTest(navController: NavController) {
     val config = rememberWearScreenConfig()
 
-    Column(
-        modifier = Modifier
-            .fillMaxSize()
-            .background(Color.Black)
-            .padding(16.dp),
-        horizontalAlignment = Alignment.CenterHorizontally,
-        verticalArrangement = Arrangement.Center
+
+    ViewScrollable(
     ) {
         Text(
             text = "SCREEN INFO",
@@ -67,10 +64,8 @@ fun SimpleConfigTest(navController: NavController) {
 
         Spacer(modifier = Modifier.height(16.dp))
 
-        Button(
-            onClick = { navController.popBackStack() }
-        ) {
-            Text("Back")
+        Column {
+            CapabilityChecker()
         }
     }
 }

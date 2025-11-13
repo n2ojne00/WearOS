@@ -3,12 +3,6 @@ package com.example.mykotlinwearos.presentation.screens
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.size
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.AccountCircle
-import androidx.compose.material.icons.filled.Create
-import androidx.compose.material.icons.filled.Favorite
-import androidx.compose.material.icons.filled.PlayArrow
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -21,6 +15,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.wear.compose.material.Text
 import com.example.mykotlinwearos.R
 import com.example.mykotlinwearos.presentation.components.IconButton
+import com.example.mykotlinwearos.presentation.deviceCapability.CapabilityChecker
 import com.example.mykotlinwearos.presentation.theme.AppIcons
 import com.example.mykotlinwearos.presentation.theme.CustomThemeHelper
 
@@ -35,6 +30,7 @@ fun MainScreen(navController: NavController) {
         Triple("today", "today", AppIcons.Active),
         Triple("Screen size", "configTest", AppIcons.Account)
     )
+
 
     val listState = rememberScalingLazyListState()
 
@@ -51,6 +47,8 @@ fun MainScreen(navController: NavController) {
         item {
             Text(text = stringResource(R.string.app_welcome), color = colors.textPrimary)
         }
+
+
         items(buttons) { (label, route, icon) ->
             IconButton(
                 icon = icon,

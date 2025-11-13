@@ -49,6 +49,9 @@ android {
 }
 
 dependencies {
+    //HEALTH SERVICES
+    implementation("androidx.health:health-services-client:1.1.0-alpha05")
+
     implementation("androidx.navigation:navigation-compose:2.9.5")
     // Compose core
     implementation("androidx.compose.ui:ui:1.7.0")
@@ -56,6 +59,7 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview:1.7.0")
 
     // Navigation
+    implementation("androidx.wear.compose:compose-navigation:1.5.0")
     implementation("androidx.navigation:navigation-compose:2.8.0")
 
     // (Optional but recommended)

@@ -33,6 +33,11 @@ data class SizeKit(
     val fullWidth: Dp
 )
 
+//Minimum touch target 48 dp x 48 dp <-
+//An element such as an icon may appear to be 24dp x 24dp, but the padding surrounding it can make up the full 48 x 48 dp touch target.
+//there are some situations where 40dp x 40dp is allowed.
+
+
 //USE REMEMBER SIZE KIT -> val sizeKit = rememberSizeKit()
 @Composable
 fun rememberSizeKit(): SizeKit {
