@@ -15,7 +15,6 @@ import androidx.compose.ui.res.stringResource
 import androidx.wear.compose.material.Text
 import com.example.mykotlinwearos.R
 import com.example.mykotlinwearos.presentation.components.IconButton
-import com.example.mykotlinwearos.presentation.deviceCapability.CapabilityChecker
 import com.example.mykotlinwearos.presentation.theme.AppIcons
 import com.example.mykotlinwearos.presentation.theme.CustomThemeHelper
 
@@ -48,7 +47,6 @@ fun MainScreen(navController: NavController) {
             Text(text = stringResource(R.string.app_welcome), color = colors.textPrimary)
         }
 
-
         items(buttons) { (label, route, icon) ->
             IconButton(
                 icon = icon,
@@ -60,7 +58,7 @@ fun MainScreen(navController: NavController) {
             Text(text = stringResource(R.string.exit), color = colors.textPrimary)
         }
         item {
-            Text(text = stringResource(R.string.hello_name, "test name" ), color = colors.textPrimary)
+            Text(text = stringResource(R.string.hello_name, "NAME" ), color = colors.textPrimary)
         }
 
  }

@@ -65,7 +65,7 @@ fun SimpleConfigTest(navController: NavController) {
         Spacer(modifier = Modifier.height(16.dp))
 
         Column {
-            CapabilityChecker()
+          CapabilityChecker()
         }
     }
 }

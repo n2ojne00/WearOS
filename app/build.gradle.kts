@@ -49,18 +49,22 @@ android {
 }
 
 dependencies {
-    //HEALTH SERVICES
+    // HEALTH SERVICES
     implementation("androidx.health:health-services-client:1.1.0-alpha05")
 
-    implementation("androidx.navigation:navigation-compose:2.9.5")
     // Compose core
     implementation("androidx.compose.ui:ui:1.7.0")
     implementation("androidx.compose.material:material:1.7.0")
     implementation("androidx.compose.ui:ui-tooling-preview:1.7.0")
 
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.4.0")
+
     // Navigation
+    implementation("androidx.navigation:navigation-compose:2.9.5")
     implementation("androidx.wear.compose:compose-navigation:1.5.0")
-    implementation("androidx.navigation:navigation-compose:2.8.0")
+
+    // Activity Compose
+    implementation("androidx.activity:activity-compose:1.9.2")
 
     // (Optional but recommended)
     implementation("androidx.activity:activity-compose:1.9.2")
